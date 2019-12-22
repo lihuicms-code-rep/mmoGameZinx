@@ -1,0 +1,11 @@
+{
+  "Host":"0.0.0.0",
+  "IPVersion":"tcp4",
+  "Port":7777,
+  "Name":"MMO Game Server",
+  "Version":"V0.9",
+  "MaxConn":3000,
+  "MaxPackageSize":1024,
+  "WorkerPoolSize":4,
+  "MaxWorkerTaskLen":100
+}

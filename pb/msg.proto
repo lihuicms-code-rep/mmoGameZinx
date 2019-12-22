@@ -1,0 +1,10 @@
+syntax="proto3";
+package pb;
+option csharp_namespace="Pb";     //给C#提供选项
+
+
+
+
+
+
+
