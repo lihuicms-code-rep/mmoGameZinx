@@ -1,10 +1,28 @@
-syntax="proto3";
+syntax = "proto3";
 package pb;
-option csharp_namespace="Pb";     //给C#提供选项
+option csharp_namespace = "Pb"; //给C#提供选项
 
+//同步玩家ID
+message SyncPid {
+    int32 Pid = 1;
+}
 
+//位置信息
+message Position {
+    float X = 1;
+    float Y = 2;
+    float Z = 3;
+    float V = 4;
+}
 
-
-
-
+//广播消息
+message BroadCast {
+    int32 Pid = 1;
+    int32 Tp = 2;             //TP=1,世界聊天， 2:玩家位置 3:动作, 4移动之后的坐标信息更新
+    oneof Data {
+        string Content = 3;   //玩家聊天信息
+        Position P = 4;       //玩家位置
+        int32 ActionData = 5; //具体动作
+    }
+}
 

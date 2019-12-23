@@ -1,2 +1,4 @@
-github.com/lihuicms-code-rep/zinx v0.0.0-20191221063253-5c3781dd50a8 h1:cdnasSPEPq5t2uf9jC3henTw4Co0Qkkj4bBeBhbHaSA=
-github.com/lihuicms-code-rep/zinx v0.0.0-20191221063253-5c3781dd50a8/go.mod h1:uzqkNbelMfnYnTf70X/thhxGPTtGKXrOL94abTt2y4U=
+github.com/golang/protobuf v1.3.2 h1:6nsPYzhq5kReh6QImI3k5qWzO4PEbvbIW2cwSfR/6xs=
+github.com/golang/protobuf v1.3.2/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
+github.com/lihuicms-code-rep/zinx v0.0.0-20191223143511-1188f542a8cd h1:6Ea/yG+3KmxnDoQF/EWUwP/6T5rZgWmHLTe44m+x7RA=
+github.com/lihuicms-code-rep/zinx v0.0.0-20191223143511-1188f542a8cd/go.mod h1:W7TF0Zu6A+6EiruTvsNCg5QCMj5VUR30n1gXPafc+Hk=
