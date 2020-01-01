@@ -117,12 +117,7 @@ func (p *Player) Talk(content string) {
 //同步玩家上线的位置消息
 func (p *Player) SyncSurrounding() {
 	//获取当前玩家周围玩家(九宫格)
-	pids := WorldMgrObj.AOIMgr.GetPidsByPos(p.Pos.X, p.Pos.Z)
-
-	players := make([]*Player, 0, len(pids))
-	for _, pid := range pids {
-		players = append(players, WorldMgrObj.GetPlayerByPid(int32(pid)))
-	}
+	players := p.GetSurroundPlayers()
 
 	//给周围玩家发送自己的位置信息
 	data := &pb.BroadCast{
@@ -161,5 +156,63 @@ func (p *Player) SyncSurrounding() {
 	}
 
 	p.SendMsg(202, playersMsg)
+}
 
+
+//广播当前玩家位置移动信息
+func (p *Player) UpdatePos(x, y, z, v float32) {
+	//更新新的位置
+	p.Pos.X = x
+	p.Pos.Y = y
+	p.Pos.Z = z
+	p.Pos.V = v
+
+	//广播协议
+	data := &pb.BroadCast{
+		Pid: p.Pid,
+		Tp:  4,
+		Data: &pb.BroadCast_P{
+			&pb.Position{
+				X: p.Pos.X,
+				Y: p.Pos.Y,
+				Z: p.Pos.Z,
+				V: p.Pos.V,
+			},
+		},
+	}
+
+	//获取周边全部玩家(九宫格)
+    players := p.GetSurroundPlayers()
+    for _, player := range players {
+    	player.SendMsg(200, data)
+	}
+}
+
+
+//获取玩家九宫格内所有玩家信息
+func (p *Player) GetSurroundPlayers() []*Player {
+	pids := WorldMgrObj.AOIMgr.GetPidsByPos(p.Pos.X, p.Pos.Z)
+
+	players := make([]*Player, 0, len(pids))
+	for _, pid := range pids {
+		players = append(players, WorldMgrObj.GetPlayerByPid(int32(pid)))
+	}
+
+	return players
+}
+
+//玩家下线
+func (p *Player) Offline() {
+	players := p.GetSurroundPlayers()
+	data := &pb.SyncPid{
+		Pid:p.Pid,
+	}
+
+	for _, player := range players {
+		player.SendMsg(201, data)
+	}
+
+	//同时将当前玩家从AOI管理信息中删除
+	WorldMgrObj.RemovePlayerByPid(p.Pid)
+	WorldMgrObj.AOIMgr.RemoveFromGridByPos(int(p.Pid), p.Pos.X, p.Pos.Z)
 }

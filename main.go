@@ -13,10 +13,14 @@ func main() {
 	var s ziface.IServer
 	s = znet.NewServer("MMO Game Server")
 
-	//注册连接创建/销毁的HOOK函数
+	//注册连接创建后/销毁前的HOOK函数
     s.SetOnConnStart(OnConnectionAdd)
+	s.SetOnConnStop(OnConnectLost)
+
 	//注册一些路由业务
 	s.AddRouter(2, &apis.WorldChatAPI{})
+	s.AddRouter(200, &apis.MoveAPI{})
+
 	//启动服务
 	s.Serve()
 }
@@ -42,4 +46,13 @@ func OnConnectionAdd(conn ziface.IConnection) {
 
 	fmt.Println("====> player pid=", player.Pid, " online.....")
 
+}
+
+
+//客户端连接断开之前的Hook函数
+func OnConnectLost(conn ziface.IConnection) {
+	pid, _ := conn.GetProperty("pid")
+	player := core.WorldMgrObj.GetPlayerByPid(pid.(int32))
+	//玩家下线的具体业务
+	player.Offline()
 }
