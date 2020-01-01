@@ -26,3 +26,18 @@ message BroadCast {
     }
 }
 
+//世界聊天
+message Talk {
+    string Content = 1;      //聊天信息
+}
+
+//同步玩家显示数据
+message SyncPlayers {
+    repeated Player ps=1;
+}
+
+//玩家要显示的信息
+message Player {
+    int32 Pid=1;          //玩家id
+    Position P=2;         //玩家位置
+}

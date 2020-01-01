@@ -14,6 +14,16 @@ type AOIManager struct {
 	grids map[int]*Grid //区域中有哪些格子
 }
 
+//定义一些AOI边界值
+const (
+	AOI_MIN_X  int = 0
+	AOI_MAX_X  int = 250
+	AOI_CNTS_X int = 5
+	AOI_MIN_Y  int = 0
+	AOI_MAX_Y  int = 250
+	AOI_CNTS_Y int = 5
+)
+
 //初始化
 func NewAOIManager(minX, maxX, minY, maxY, cntsX, cntsY int) *AOIManager {
 	aoiManager := &AOIManager{

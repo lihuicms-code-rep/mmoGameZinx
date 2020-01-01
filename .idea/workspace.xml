@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/core/aoi.go" line="73" />
+    <bookmark url="file://$PROJECT_DIR$/core/aoi.go" line="83" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15bd9b11-b49c-4718-b0be-2e4f27146ffa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/player.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pb/msg.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apis/worldchat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/worldmgr.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/aoi.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/aoi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/player.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/player.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pb/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/pb/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/msg.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/pb/msg.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pb/msg.proto" beforeDir="false" afterPath="$PROJECT_DIR$/pb/msg.proto" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +33,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="9" />
+          <entry key="go" value="11" />
           <entry key="json" value="1" />
           <entry key="mod" value="1" />
           <entry key="proto" value="1" />
@@ -43,7 +43,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="DTD" value="1" />
-          <entry key="Go" value="9" />
+          <entry key="Go" value="11" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="PROTO" value="1" />
@@ -51,31 +51,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="6395" />
+          <entry key="go" value="8794" />
           <entry key="json" value="22" />
           <entry key="mod" value="38" />
-          <entry key="proto" value="445" />
+          <entry key="proto" value="665" />
           <entry key="sh" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DTD" value="38" />
-          <entry key="Go" value="6395" />
+          <entry key="Go" value="8794" />
           <entry key="JSON" value="22" />
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="PROTO" value="445" />
+          <entry key="PROTO" value="665" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.go.postfix.template.usages.trigger">
+        <counts>
+          <entry key=".p" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="351">
+              <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apis/worldchat.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding>
                 <element signature="e#14#110#0" expanded="true" />
               </folding>
@@ -86,8 +100,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pb/msg.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="331">
+              <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/worldmgr.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -95,17 +118,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pb/msg.pb.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="187" column="5" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
+            <state relative-caret-position="180">
+              <caret line="279" column="5" selection-start-line="279" selection-start-column="5" selection-end-line="279" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/player.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="38" />
+            <state relative-caret-position="275">
+              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+              <folding>
+                <element signature="e#14#150#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/gopath/pkg/mod/github.com/lihuicms-code-rep/zinx@v0.0.0-20191221063253-5c3781dd50a8/znet/server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="285">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
@@ -132,16 +158,7 @@
         <entry file="file://$PROJECT_DIR$/go.mod">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/zinx.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -149,8 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/aoi.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="331">
+              <caret line="167" column="21" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -181,14 +198,16 @@
       <list>
         <option value="$PROJECT_DIR$/core/grid.go" />
         <option value="$PROJECT_DIR$/core/aoi_test.go" />
-        <option value="$PROJECT_DIR$/core/aoi.go" />
         <option value="$PROJECT_DIR$/conf/zinx.json" />
         <option value="$PROJECT_DIR$/pb/build.sh" />
-        <option value="$PROJECT_DIR$/pb/msg.proto" />
         <option value="D:/gopath/pkg/mod/github.com/lihuicms-code-rep/zinx@v0.0.0-20191221063253-5c3781dd50a8/znet/server.go" />
         <option value="$PROJECT_DIR$/go.mod" />
-        <option value="$PROJECT_DIR$/core/player.go" />
+        <option value="$PROJECT_DIR$/core/aoi.go" />
+        <option value="$PROJECT_DIR$/core/worldmgr.go" />
+        <option value="$PROJECT_DIR$/apis/worldchat.go" />
+        <option value="$PROJECT_DIR$/pb/msg.proto" />
         <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/core/player.go" />
       </list>
     </option>
   </component>
@@ -199,9 +218,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="482" />
-    <option name="y" value="6" />
-    <option name="width" value="1291" />
+    <option name="x" value="1066" />
+    <option name="y" value="1" />
+    <option name="width" value="1594" />
     <option name="height" value="1019" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -271,7 +290,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestAOIManager_GetSurroundGridsByGid in aoi_test.go">
+  <component name="RunManager" selected="Bash.build.sh">
+    <configuration name="build.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="mmoGameZinx" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="E:\goprojects\mmoGameZinx\pb" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="E:\goprojects\mmoGameZinx\pb\build.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test in aoi_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="mmoGameZinx" />
       <working_directory value="$PROJECT_DIR$/core" />
@@ -306,9 +336,11 @@
       <item itemvalue="Go Test.TestNewAOIManager in aoi_test.go" />
       <item itemvalue="Go Test.Test in aoi_test.go" />
       <item itemvalue="Go Test.TestAOIManager_GetSurroundGridsByGid in aoi_test.go" />
+      <item itemvalue="Bash.build.sh" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Bash.build.sh" />
         <item itemvalue="Go Test.TestAOIManager_GetSurroundGridsByGid in aoi_test.go" />
         <item itemvalue="Go Test.Test in aoi_test.go" />
         <item itemvalue="Go Test.TestNewAOIManager in aoi_test.go" />
@@ -316,10 +348,10 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="482" y="6" width="1291" height="1019" extended-state="0" />
+    <frame x="1066" y="1" width="1594" height="1019" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26807472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11147327" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -331,7 +363,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.47850677" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33144796" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -367,7 +399,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pb/msg.proto">
+    <entry file="file://$PROJECT_DIR$/conf/zinx.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/gopath/pkg/mod/github.com/lihuicms-code-rep/zinx@v0.0.0-20191221063253-5c3781dd50a8/znet/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -381,54 +427,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pb/msg.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="187" column="5" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/zinx.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/aoi.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="331">
+          <caret line="167" column="21" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/gopath/pkg/mod/github.com/lihuicms-code-rep/zinx@v0.0.0-20191221063253-5c3781dd50a8/znet/server.go">
+    <entry file="file://$PROJECT_DIR$/apis/worldchat.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/player.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="380">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="e#14#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="351">
+          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/worldmgr.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pb/msg.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="279" column="5" selection-start-line="279" selection-start-column="5" selection-end-line="279" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pb/msg.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/player.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
           <folding>
-            <element signature="e#14#110#0" expanded="true" />
+            <element signature="e#14#150#0" expanded="true" />
           </folding>
         </state>
       </provider>
